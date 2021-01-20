@@ -28,22 +28,22 @@ export declare class NgxPrintDirective {
      * Page margin left, default unit:mm
      * @memberof NgxPrintDirective
      */
-    pageMarginLeft: number;
+    pageMarginLeft: string;
     /**
      * Page margin right, default unit:mm
      * @memberof NgxPrintDirective
      */
-    pageMarginRight: number;
+    pageMarginRight: string;
     /**
      * Page margin top, default unit:mm
      * @memberof NgxPrintDirective
      */
-    pageMarginTop: number;
+    pageMarginTop: string;
     /**
      * Page margin bottom, default unit:mm
      * @memberof NgxPrintDirective
      */
-    pageMarginBottom: number;
+    pageMarginBottom: string;
     /**
      * Page margin bottom, default unit:mm
      * @memberof NgxPrintDirective

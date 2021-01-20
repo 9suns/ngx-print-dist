@@ -22,7 +22,7 @@ import {NgxPrintModule} from 'ngx-print';
 })
 export class YourAppModule {
 }
-```
+   ```
 
  **3-** Then plug n' play with it: 
 
@@ -73,7 +73,7 @@ export class YourAppModule {
 
 ```
 
-  
+
 - Also, would you like to customize the printing window style sheet (CSS) ? Hence you can do so by adding infinite styles to another attribute called `printStyle`:
 
   
@@ -93,7 +93,7 @@ export class YourAppModule {
 ```
 
 Here some simple styles were added to every `h1` & `h2` tags within the `div` where `print-section` is tagged to its `id` attribute.
-  
+
 - If you would like to use your existing CSS with media print you can add the `useExistingCss` attribute:
 
 ```html
@@ -128,6 +128,27 @@ Here some simple styles were added to every `h1` & `h2` tags within the `div` wh
   ngxPrint>print</button>
 
 ```
+If you want to customize the print page margin setting, can use `pageMarginLeft` `pageMarginRight` `pageMarginTop` `pageMarginBottom` the default unit is mm, if you want to customize the unit, please use `pageMarginUnit`:
+
+``` javascript
+<div  id="print-section">
+
+<!-- ... -->
+
+</div>
+
+<button
+  pageMarginLeft="5"
+  pageMarginRight="5"
+  pageMarginTop="5"
+  pageMarginBottom="5"
+  pageMarginUnit="mm" ngxPrint>print</button>
+```
+
+
+
+
+
 ## Contributors :1st_place_medal: 
 
 Huge thanks to: [deeplotia](https://github.com/deeplotia) , [Ben L](https://github.com/broem) , [Gavyn McKenzie](https://github.com/gavmck) , [silenceway](https://github.com/silenceway), [Muhammad Ahsan Ayaz](https://github.com/AhsanAyaz) and to all  `ngx-print` users 
