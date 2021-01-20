@@ -152,7 +152,9 @@
                     pageStyles.push("margin-top:" + this.pageMarginTop + pageUnit + ";");
                 if (this.pageMarginBottom)
                     pageStyles.push("margin-bottom:" + this.pageMarginBottom + pageUnit + ";");
-                return "<style>@page{ " + pageStyles.join(' ') + " }</style>" + ("<style> " + this._printStyle.join(' ').replace(/,/g, ';') + " </style>");
+                /** @type {?} */
+                var style = "<style>@page{ " + pageStyles.join(' ') + " }</style>" + ("<style> " + this._printStyle.join(' ').replace(/,/g, ';') + " </style>");
+                console.log(style);
             };
         Object.defineProperty(NgxPrintDirective.prototype, "styleSheetFile", {
             /**

@@ -69,7 +69,7 @@ export declare class NgxPrintDirective {
      *
      * @memberof NgxPrintDirective
      */
-    returnStyleValues(): string;
+    returnStyleValues(): void;
     /**
      *
      *
